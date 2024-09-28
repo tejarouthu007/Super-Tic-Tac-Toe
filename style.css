@@ -2,13 +2,13 @@
 
 
 .cell {
-    width: 50px;
-    height: 50px;
-    border: 1.8px solid black;
-    box-shadow: 0 0 0 1.8px black;
+    width: 40px;
+    height: 40px;
+    border: 1.6px solid black;
+    box-shadow: 0 0 0 1.6px black;
     cursor: pointer;
-    line-height: 50px;
-    font-size: 42px;
+    line-height: 40px;
+    font-size: 35px;
 }
 #gameContainer {
     font-family: 'Permanent Marker', cursive;
@@ -18,14 +18,14 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     text-align: center;
-    width: 500px;
-    height: 500px;
+    width: 410px;
+    height: 410px;
     margin: auto;
 }
 #cellContainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 150px;
+    width: 120px;
     margin: auto;
 }
 #restartBtn {
