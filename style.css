@@ -31,3 +31,6 @@
 #restartBtn {
     font-family: 'Permanent Marker', cursive;
 }
+#statusText, #subStatusText {
+    font-size: 125%;
+}
