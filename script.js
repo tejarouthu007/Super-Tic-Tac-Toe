@@ -74,10 +74,10 @@ function changePlayer(gameIdx) {
     currentPlayer = (currentPlayer == "X")? "O" : "X";
     statusText.textContent = `${currentPlayer}'s turn`;
     if(mainOptions[gameIdx]=="") {
-        statusText.textContent += ` (${currentPlayer} has to play Tile-${parseInt(gameIdx,10)+1} now)`;
+        statusText.textContent += ` (${currentPlayer} has to play Board-${parseInt(gameIdx,10)+1} now)`;
     } 
     else {
-        statusText.textContent += ` (${currentPlayer} can play any Tile now)`;
+        statusText.textContent += ` (${currentPlayer} can play any Board now)`;
     }
 }
 function checkWinner(gameIdx) {
@@ -105,12 +105,12 @@ function checkWinner(gameIdx) {
         }
     }
     if(won) {
-        subStatusText.textContent = `Tile-${parseInt(gameIdx,10)+1} is now marked for ${currentPlayer}!`;
+        subStatusText.textContent = `Board-${parseInt(gameIdx,10)+1} is now marked for ${currentPlayer}!`;
         mainOptions[gameIdx] = currentPlayer;
         checkGameWinner();
     }
     else if(!options[gameIdx].includes("")) {
-        subStatusText.textContent = `Tile-${parseInt(gameIdx,10)+1} is now marked as Draw!`;
+        subStatusText.textContent = `Board-${parseInt(gameIdx,10)+1} is now marked as Draw!`;
         mainOptions[gameIdx] = "D";
     }
 }
