@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent Marker");
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 2px black;
+    cursor: pointer;
+    line-height: 60px;
+    font-size: 45px;
+}
+#gameContainer {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+
+}
+#subGameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 180px;
+    margin: auto;
+}
+#restartBtn {
+    font-family: 'Permanent Marker', cursive;
+}
