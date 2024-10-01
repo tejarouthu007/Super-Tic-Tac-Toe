@@ -112,6 +112,7 @@ function checkWinner(gameIdx) {
     else if(!options[gameIdx].includes("")) {
         subStatusText.textContent = `Board-${parseInt(gameIdx,10)+1} is now marked as Draw!`;
         mainOptions[gameIdx] = "D";
+        checkGameWinner();
     }
 }
 function checkGameWinner() {
